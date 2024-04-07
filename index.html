@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechAspect</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+          <li><a href="cybersecurity.html">Cybersecurity</a></li>
+          <li><a href="ethicalhacking.html">Ethical Hacking</a></li>
+          <li><a href="ai.html">AI</a></li>
+          <li><a href="coding.html">Coding</a></li>
+          <li><a href="app_development.html">App Development</a></li>
+          <li><a href="courses.html">Courses</a></li>
+      </ul>
+    </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+    <li><a href="cybersecurity.html">Cybersecurity</a></li>
+    <li><a href="ethicalhacking.html">Ethical Hacking</a></li>
+    <li><a href="ai.html">AI</a></li>
+    <li><a href="coding.html">Coding</a></li>
+    <li><a href="app_development.html">App Development</a></li>
+    <li><a href="courses.html">Courses</a></li>
+</ul>
+
+<header>
+    <h1>TechAspect - Learn, Code, Share</h1>
+</header>
+
+<main>
+    <hr>
+    <section class="welcome-section">
+        <h2>Welcome to TechAspect</h2>
+        <p>Select a field to explore more.</p>
+
+        <div class="video-skeleton">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/eKqY-oP1d_Y?si=UZqv4pDDUzp8MzU8" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/NWnBxQjssvQ?si=91ct0YT8Jo47-kQX" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/KsXp22QLMv0?si=1UqQnyWBTX_5tU-E" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <section class="top-rated-section">
+        <h2>Top Rated Videos</h2>
+        <ul id="topRatedVideos"></ul>
+    </section>
+
+    <hr>
+    <section class="review-section">
+        <h2>Student Reviews</h2>
+        <div class="review-form">
+            <h4>Share Your Thoughts</h4>
+            <form id="reviewForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="review">Your Review:</label>
+                <textarea id="review" name="review" rows="4" required></textarea>
+
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+        <div id="reviews" class="reviews"></div>
+    </section>
+
+    <a href="index.html" class="return-home">Return to Home</a>
+</main>
+
+<footer>
+    <p>&copy; 2024 TechAspect. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });
+</script>
+</body>
+</html>
