@@ -11,7 +11,7 @@ body {
     background-image: url('bg.jpg');
     background-size: cover;
     background-position: center;
-    color: #333;
+    color: #fff; /* Change text color to white for better contrast */
 }
 
 /* Main Styles */
@@ -22,7 +22,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between; /* Ensure even spacing between videos */
     margin-bottom: 20px;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background for better contrast */
     border-radius: 10px;
     padding: 20px;
 }
@@ -45,7 +45,7 @@ body {
 
 /* Navigation Styles */
 nav {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for better contrast */
 }
 
 nav ul {
@@ -58,13 +58,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #fff; /* Change text color to white for better contrast */
     text-decoration: none;
 }
 
 /* Header Styles */
 header {
-    background-color: #f4f4f4;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background for better contrast */
     padding: 20px;
     text-align: center;
 }
@@ -72,6 +72,7 @@ header {
 header h1 {
     margin-bottom: 20px;
     font-size: 1.5em; /* Adjust the font size for smaller screens */
+    font-weight: bold; /* Added bold font weight */
 }
 
 /* Main Content Styles */
@@ -87,7 +88,7 @@ main {
 }
 
 .course {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background for better contrast */
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
@@ -106,6 +107,7 @@ main {
 .course-details h2 {
     margin-bottom: 10px;
     font-size: 1.2em; /* Adjust the font size for smaller screens */
+    font-weight: bold; /* Added bold font weight */
 }
 
 .course-details p {
@@ -115,35 +117,15 @@ main {
 
 .course-details button {
     padding: 10px 20px;
-    background-color: #333;
-    color: white;
+    background-color: #fff; /* Change button background color to white for better contrast */
+    color: #333; /* Change button text color to darker for better contrast */
     border: none;
-    border-radius: 5px;
+    border-radius: 20px; /* Increased border radius for rounder corners */
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 1em; /* Adjust the font size for smaller screens */
+    font-weight: bold; /* Added bold font weight */
 }
-
-
-.course-details button:hover {
-    background-color: #555;
-}
-
-
-.top-rated-section,
-.review-section {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-
-.course-description {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-}
-
 /* Footer Styles */
 footer {
     background-color: #333;
