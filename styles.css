@@ -124,8 +124,24 @@ main {
     font-size: 1em; /* Adjust the font size for smaller screens */
 }
 
+
 .course-details button:hover {
     background-color: #555;
+}
+
+
+.top-rated-section,
+.review-section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+.course-description {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 /* Footer Styles */
