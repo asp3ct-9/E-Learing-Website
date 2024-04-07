@@ -1,15 +1,49 @@
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body Styles */
 body {
+    font-family: Arial, sans-serif;
     background-image: url('bg.jpg');
     background-size: cover;
     background-position: center;
+    color: #333;
 }
 
+/* Main Styles */
+
+/* Video Section Styles */
+.video-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensure even spacing between videos */
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.video-container {
+    width: calc(50% - 10px); /* Set width for each video container */
+    margin-bottom: 20px;
+}
+
+.video-container iframe {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust layout for smaller screens */
+    .video-container {
+        width: 100%; /* Make videos full width on smaller screens */
+    }
+}
+
+/* Navigation Styles */
 nav {
     background-color: #333;
 }
@@ -28,6 +62,7 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Header Styles */
 header {
     background-color: #f4f4f4;
     padding: 20px;
@@ -36,32 +71,68 @@ header {
 
 header h1 {
     margin-bottom: 20px;
+    font-size: 1.5em; /* Adjust the font size for smaller screens */
 }
 
+/* Main Content Styles */
 main {
     padding: 20px;
 }
 
-.video-section {
+/* Course Description Styles */
+.courses {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 20px;
 }
 
-.video-section iframe {
-    margin-bottom: 10px;
-}
-
-.course-description {
-    background-color: #f4f4f4;
+.course {
+    background-color: white;
+    border-radius: 10px;
     padding: 20px;
-    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 45%;
 }
 
+.course img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.course-details {
+    padding: 10px;
+}
+
+.course-details h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em; /* Adjust the font size for smaller screens */
+}
+
+.course-details p {
+    margin-bottom: 5px;
+    font-size: 1em; /* Adjust the font size for smaller screens */
+}
+
+.course-details button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1em; /* Adjust the font size for smaller screens */
+}
+
+.course-details button:hover {
+    background-color: #555;
+}
+
+/* Footer Styles */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px;
+    font-size: 0.8em; /* Adjust the font size for smaller screens */
 }
