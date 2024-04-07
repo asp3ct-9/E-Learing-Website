@@ -12,6 +12,32 @@ body {
     background-size: cover;
     background-position: center;
     color: #fff; /* Change text color to white for better contrast */
+    margin: 0;
+    padding: 0;
+}
+
+
+h1, h2, h4, p, label, button {
+    font-size: 1em;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+
+    p, label, button {
+        font-size: 0.9em;
+    }
 }
 
 /* Main Styles */
